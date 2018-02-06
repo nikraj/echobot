@@ -22,7 +22,7 @@ restService.post("/echo", function (req, res) {
         if (error === null) {
             //var speech = response
             return res.json({
-                speech: 'hi',
+                speech: 'i am heroku',
                 displayText: 'hellospeech',
                 source: "bot"
             });
