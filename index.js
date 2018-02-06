@@ -33,6 +33,7 @@ restService.post("/echo", function (req, res) {
                 displayText: 'hello',
                 source: "bot"
             });
+        }
     });
   //var speech =
   //  req.body.result &&
