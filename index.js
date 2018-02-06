@@ -20,9 +20,10 @@ restService.use(bodyParser.json());
 restService.post("/echo", function (req, res) {
     textapi.classify({ 'text': 'John is a very bad football player!' }, function (error, response) {
         if (error === null) {
+            var speech = response
             return res.json({
-                speech: response,
-                displayText: response,
+                speech: speech,
+                displayText: speech,
                 source: "webhook-echo-sample"
             });
         }
