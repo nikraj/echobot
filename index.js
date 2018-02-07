@@ -18,7 +18,13 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function (req, res) {
-    textapi.classify({ 'text': 'Messi is best player' }, function (error, response) {
+    var speech =
+  req.body.result &&
+  req.body.result.parameters &&
+  req.body.result.parameters.echoText
+   ? req.body.result.parameters.echoText
+ : "Seems like some problem. Speak again.";
+    textapi.classify({ 'text': speech }, function (error, response) {
         if (error === null) {
             //var speech = response
             return res.json({
