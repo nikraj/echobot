@@ -18,7 +18,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function (req, res) {
-    textapi.classify({ 'text': 'Microsoft is planning to grow!!' }, function (error, response) {
+    textapi.classify({ 'text': 'Titanic is awesome to watch!!' }, function (error, response) {
         if (error === null) {
             //var speech = response
             return res.json({
