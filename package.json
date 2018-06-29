@@ -6,7 +6,7 @@
     "jquery": "^3.3.1",
     "shoestring": "^1.0.5",
     "vue-json-excel": "^0.2.5",
-    "vue-numeric": "^2.3.0"
+    "vue-numeric": "^2.3.0",
     "scripts" : { "start" : "node dist\main.js" } }
   },
   "devDependencies": {
